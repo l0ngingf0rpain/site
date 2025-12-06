@@ -1,63 +1,60 @@
-/* Основные стили */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url("https://www.transparenttextures.com/patterns/white-wall.png");
-    
-    /* Чтобы футер был внизу, делаем flex-контейнер */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт</title>
 
-/* Контентная часть (вся остальная страница) */
-.animals, header {
-    width: 90%;
-    margin: auto;
-    flex: 1; /* растягивает контент на оставшееся место */
-}
+    <!-- Незвичайний шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
 
-/* Стили header */
-header {
-    text-align: left;
-    padding: 40px;
-    margin-left: 30px;
-}
+    <!-- Стилі -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header h1 {
-    font-family: 'Rubik Distressed', cursive;
-    font-size: 48px;
-}
+    <header>
+        <h1>Ласкаво просимо на мій сайт</h1>
+        <p>Опис сайту</p>
+    </header>
 
-header p {
-    font-size: 20px;
-}
+    <section class="animals">
 
-/* Секции с животными */
-.block {
-    margin-bottom: 40px;
-}
+        <div class="block">
+            <img src="assets/images/tigr.jpg" alt="Тигр">
+            <p>
+                Тигр, пантера тигр (Panthera tigris) — великий ссавець родини котових, один з чотирьох видів групи «великих кішок» роду пантер (Panthera). 
+                Слово «тигр» походить від грецького tigris, яке у свою чергу походить з іранських мов, і означає ревіння чи зойк наприкінці радісного вітання. 
+                Еволюційним центром походження і сучасного ареалу є Східна та Південно-Східна Азія.
+            </p>
+        </div>
 
-.block img {
-    width: 350px;
-    border-radius: 15px;
-    display: block;
-    margin-bottom: 20px;
-}
+        <div class="block">
+            <img src="assets/images/slon.jpg" alt="Слон">
+            <p>
+                Слон — загальна народна назва всіх родів і видів тварин з родини Слонові (Elephantidae). 
+                Сучасні слони мешкають у Африці на південь від Сахари та в Південній Азії. 
+                Ця група тварин має величезне значення в історії багатьох народів світу і культур.
+            </p>
+        </div>
 
-.block p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-}
+        <div class="block">
+            <img src="assets/images/chaplja.jpg" alt="Чапля">
+            <p>
+                Чапля (Ardea) — рід птахів родини чаплевих (Ardeidae). 
+                Слово чапля походить від прасл. capja, утвореного з дієслова capati («чапати», «чалапати», «ходити з плескотом»), 
+                що пов'язане з особливостями її пересування на мілководді. 
+                Представники родини мешкають у водно-болотних біотопах. 
+                Довжина до 110 см, вага до 2 кг.
+            </p>
+        </div>
 
-/* Фиксированный футер */
-footer {
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-}
+    </section>
+
+    <footer>
+        © 2025 — Автор: Каріна Халілова
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
