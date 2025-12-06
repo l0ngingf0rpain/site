@@ -3,6 +3,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: url("https://www.transparenttextures.com/patterns/white-wall.png");
+
+    /* Чтобы футер был внизу, делаем flex-контейнер */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -23,6 +28,7 @@ header p {
 .animals {
     width: 90%;
     margin: auto;
+    flex: 1; /* растягиваем контент на оставшееся место */
 }
 
 .block {
@@ -45,8 +51,6 @@ header p {
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-    opacity: 0.7;
     font-weight: bold;
     font-size: 1rem;
     background-color: #f5f5f5;
